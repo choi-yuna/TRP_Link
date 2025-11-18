@@ -28,6 +28,6 @@ export const LoginResponseSchema = z.object({
   access_token: z.string().optional(),
   refresh: z.string().optional(),
   refresh_token: z.string().optional(),
-  user: UserSchema.optional(), // 백엔드에 따라 있을 수도, 없을 수도
+  user: UserSchema.optional(), 
 });
 export type LoginResponse = z.infer<typeof LoginResponseSchema>;
